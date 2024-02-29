@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio Encriptador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,24 +22,27 @@
                 <span>Solo letras minúsculas y sin acentos</span>
             </div>
             <div class="buttons">
-                <button id="e-btn">Encriptar</button>
-                <button id="d-btn">Desencriptar</button>
+                <button id="e-btn" onclick="encriptar()">Encriptar</button>
+                <button id="d-btn" onclick="desencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="section-2">
-            <img class="figure" src="./images/Muñeco.png" alt="figure">
             <div class="text-container">
+                <img class="figure" src="./images/Muñeco.png" alt="figure">
                 <h2>Ningún mensaje fue encontrado</h2>
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <div class="copy-container">
-                <button id="copy-btn">Copiar</button>
+            <div class="codificacion">
+                <div class="answer-container">
+                    <p class="answer"></p>
+                </div>
+                <div class="copy-container">
+                    <button id="copy-btn" onclick="copy()">Copiar</button>
             </div>
-            <div class="answer-container">
-                <p class="answer"></p>
             </div>
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
